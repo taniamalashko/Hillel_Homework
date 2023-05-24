@@ -1,8 +1,7 @@
 function deleteElement(array, element) {
-    for (i = 0; i < array.length; i++) {
-        if (array[i] === element) {
-            array.splice(i, 1);
-        }
+    if (array.indexOf(element) !== -1) {
+        array.splice(array.indexOf(element), 1);
+    } else {
+        console.log('element does not exist');
     }
-    return array;
 }
