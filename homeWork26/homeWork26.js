@@ -45,7 +45,9 @@ Array.prototype.heroesRender = function(universe){
 
     if (['dc', 'marvel'].includes(universeName)) {
 		heroesArray = universeName === 'dc' ? dcHeroes : marvelHeroes;
+
 		let TRs = [];
+
 		this.forEach(function(item){
 			if (heroesArray.some(function(element){
 				return element.name === item.name;
@@ -59,6 +61,7 @@ Array.prototype.heroesRender = function(universe){
 			    </tr>`);
 			}
 		})
+		
 		if (TRs.length !== 0) {
 			document.write(`<table>
 			<thead>
