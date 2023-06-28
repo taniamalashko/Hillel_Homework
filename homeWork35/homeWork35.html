@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s ease-in-out;
+            width: 37px;
+        }
+        input:focus {
+            outline: none;
+            border-color: #4c9aff;
+            box-shadow: 0 2px 6px rgba(76, 154, 255, 0.5);
+        }
+        .wrap {
+            display: flex;
+            height: 500px;
+        }
+        .input {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        }
+        .ghost-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="input">
+           <input type="text" id="textField" placeholder="BOO" >
+        </div>
+        <div class="ghost-container">
+            <div id="ghost" style="display: none">
+                <img src="/Hillel_Homework/homeWork35/img/pngwing.com.png" alt="ghost">
+            </div>
+        </div>
+    </div>
+<script src="/Hillel_Homework/homeWork35/homeWork35.js"></script>
+</body>
+</html>
