@@ -6,3 +6,4 @@ console.log(randomNum());
 const catImage = document.querySelector('#kitty');
 
 catImage.src = `/Hillel_Homework/homeWork37/kotiki/pngwing.com (${randomNum()}).png`
+
