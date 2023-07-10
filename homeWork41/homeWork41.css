@@ -1,0 +1,53 @@
+.slider img {
+    max-width: 100%;
+    height: auto;
+}
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.active {
+    transform: translateX(0);
+}
+
+.prev-button, .next-button {
+    font-size: 4vw;     
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    width: 5vw; 
+    height: 5vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: rgba(57, 56, 56, 0.5);
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}

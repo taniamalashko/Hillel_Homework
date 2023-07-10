@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homeWork44.css">
+</head>
+<body>
+    <div class="wrap">
+        <form id="form">
+            <div>
+                <label for="name">Введіть ім'я (3 та більше символів):</label>
+                <input type="text" id="name" name="name">
+                <small></small>
+            </div>
+            <div>
+                <label for="surname">Введіть прізвище (3 та більше символів):</label>
+                <input type="text" id="surname" name="surname">
+                <small></small>
+            </div>
+            <div>
+                <label for="birthDate">Введіть свою дату народження:</label>
+                <input type="date" id="birthDate" name="birthDate">
+                <small></small>
+            </div>
+            <div id="gender">
+                <label>Оберіть свою стать:</label>
+                <input type="radio" id="genderMale" name="gender" value="Чол.">
+                <label for="genderMale">Чоловік</label><br>
+                <input type="radio" id="genderFemale" name="gender" value="Жін.">
+                <label for="genderFemale">Жінка</label><br>
+                <input type="radio" name="gender" id="notGender" value="Не вказано">
+                <label for="notGender">Не хочу вказувати</label>
+                <small></small>
+            </div>
+            <div>
+                <label for="city">Місто:</label>
+                <select name="city" id="city">
+                    <option value="">Оберіть місто</option>
+                    <option value="Одеса">Одеса</option>
+                    <option value="Київ">Киів</option>
+                    <option value="Львів">Львів</option>
+                    <option value="Вінниця">Вінниця</option>
+                </select>
+                <small></small>
+            </div>
+            <div>
+                <label for="adress">Введіть адресу:</label><br>
+                <textarea name="adress" id="adress" cols="30" rows="2"></textarea>
+                <small></small>
+            </div>
+            <div id="languages">
+                <label>Оберіть мови, якими володієте:</label>
+                <input type="checkbox" name="languages" id="language1" value="Англійська">
+                <label for="language1">Англійська</label><br>
+                <input type="checkbox" name="languages" id="language2" value="Французька">
+                <label for="language2">Французька</label><br>
+                <input type="checkbox" name="languages" id="language3" value="Іспанська">
+                <label for="language3">Іспанська</label><br>
+                <input type="checkbox" name="languages" id="language4" value="Німецька">
+                <label for="language4">Німецька</label>
+                <small></small>
+            </div>
+            <div class="button">
+                <button type="submit">Авторизуватись</button>
+            </div>
+        </form>
+    </div>
+    <script src="homeWork44.js"></script>
+</body>
+</html>

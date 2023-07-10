@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homeWork40.css">
+    <div class="wrap">
+        <div class="categories"></div>
+        <div class="products"></div>
+        <div class="product">
+            <div class="info"></div>
+            <div class="form display__none">
+                <h3>Оформлення замовлення</h3>
+                <form id="order-form">
+                    <div class="field">
+                        <label for="name">ПІБ покупця</label>
+                        <input type="text" name="name" id="name">
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="city">Місто:</label>
+                        <select name="city" id="city">
+                            <option value="">Оберіть місто:</option>
+                            <option value="Киів">Киів</option>
+                            <option value="Одеса">Одеса</option>
+                            <option value="Вінниця">Вінниця</option>
+                            <option value="Львів">Львів</option>
+                        </select>
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="shipping">Номер відділення Новоі пошти:</label>
+                        <input type="number" name="shipping" id="shipping">
+                        <small></small>
+                    </div>
+                    <div class="field" id="payment">
+                        <label for="payment">Післяплата або оплата банківською картою:</label>
+                        <label for="afterPay">Післяплата
+                        <input type="radio" name="payment" id="afterPay" value="Післяплата">
+                        </label>
+                        <label for="card">Оплата банківською картою
+                        <input type="radio" name="payment" id="card" value="Оплата банківською карткою">
+                        </label>
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="quantity">Кількість продукції:</label>
+                        <input type="number" id="quantity" name="quantity">
+                        <small></small>
+                    </div>
+                    <div class="field">
+                        <label for="comment">Коментар до замовлення:</label>
+                        <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
+                    </div>
+                    <div class="field">
+                        <button class="formButton" type="submit">Підтвердити замовлення</button>
+                    </div>
+                </form>
+            </div> 
+        </div>
+    </div> 
+    <div class="modal display__none">
+        <div class="modal__message">
+            <div class="modal__text"><img src="img/check-svgrepo-com.svg" alt="check"> Інформація про замовлення:</div>
+            <div class="modal__info">
+                <div class="modal__prod">
+                  <img id="modalProdImg" src="https://content.rozetka.com.ua/goods/images/big/296696071.jpg" alt="Маленька адаптивна картинка">
+                  <div id="modalProdName">Назва товару</div>
+                </div>
+                <div class="modal__price">
+                  <div>Ціна: <span id="modalPrice">100 грн</span></div>
+                  <div>Кількість товару: <span id="modalQuantity">20</span></div>
+                  <div>Сума до сплати: <span id="modalSum">2000</span></div>  
+                </div>
+                <div class="modal__shipping">
+                  <div>
+                    <span>ПІБ замовника:</span>
+                    <span id="modalName">Іванов Іван Іванович</span>
+                  </div>
+                  <div>
+                    <span>Місто:</span>
+                    <span id="modalCity">Київ</span>
+                  </div>
+                  <div>
+                    <span>Номер відділення Нової пошти:</span>
+                    <span id="modalShipping">12345</span>
+                  </div>
+                  <div>
+                    <span>Спосіб оплати:</span>
+                    <span id="modalPayment">Післяплата</span>
+                  </div>
+                </div>
+              </div>
+              
+            <button class="modal__button">Окей</button>
+        </div>
+    </div>   
+    <script src="homeWork40.js"></script>
+</body>
+</html>
